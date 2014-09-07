@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD04EE6A-1C10-45DE-8E9B-46B255512C64}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Conclave.Documentation</RootNamespace>
+    <AssemblyName>Conclave.Documentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NuDoc\AssemblyMembers.cs" />
+    <Compile Include="NuDoc\B.cs" />
+    <Compile Include="NuDoc\C.cs" />
+    <Compile Include="NuDoc\CachedEnumerable.cs" />
+    <Compile Include="NuDoc\Code.cs" />
+    <Compile Include="NuDoc\Container.cs" />
+    <Compile Include="NuDoc\DelegateVisitor.cs" />
+    <Compile Include="NuDoc\Description.cs" />
+    <Compile Include="NuDoc\DocReader.cs" />
+    <Compile Include="NuDoc\DocumentMembers.cs" />
+    <Compile Include="NuDoc\Element.cs" />
+    <Compile Include="NuDoc\Event.cs" />
+    <Compile Include="NuDoc\Example.cs" />
+    <Compile Include="NuDoc\Exception.cs" />
+    <Compile Include="NuDoc\Field.cs" />
+    <Compile Include="NuDoc\Item.cs" />
+    <Compile Include="NuDoc\IVisitable.cs" />
+    <Compile Include="NuDoc\List.cs" />
+    <Compile Include="NuDoc\ListHeader.cs" />
+    <Compile Include="NuDoc\ListType.cs" />
+    <Compile Include="NuDoc\Visitor\MarkdownVisitor.cs" />
+    <Compile Include="NuDoc\Member.cs" />
+    <Compile Include="NuDoc\MemberIdMap.cs" />
+    <Compile Include="NuDoc\MemberKinds.cs" />
+    <Compile Include="NuDoc\Method.cs" />
+    <Compile Include="NuDoc\Para.cs" />
+    <Compile Include="NuDoc\Param.cs" />
+    <Compile Include="NuDoc\ParamRef.cs" />
+    <Compile Include="NuDoc\Property.cs" />
+    <Compile Include="NuDoc\Remarks.cs" />
+    <Compile Include="NuDoc\Returns.cs" />
+    <Compile Include="NuDoc\See.cs" />
+    <Compile Include="NuDoc\SeeAlso.cs" />
+    <Compile Include="NuDoc\Semantic\Class.cs" />
+    <Compile Include="NuDoc\Semantic\Enum.cs" />
+    <Compile Include="NuDoc\Semantic\ExtensionMethod.cs" />
+    <Compile Include="NuDoc\Semantic\Interface.cs" />
+    <Compile Include="NuDoc\Semantic\Struct.cs" />
+    <Compile Include="NuDoc\Summary.cs" />
+    <Compile Include="NuDoc\Term.cs" />
+    <Compile Include="NuDoc\Text.cs" />
+    <Compile Include="NuDoc\TextVisitor.cs" />
+    <Compile Include="NuDoc\TypeDeclaration.cs" />
+    <Compile Include="NuDoc\TypeParam.cs" />
+    <Compile Include="NuDoc\TypeParamRef.cs" />
+    <Compile Include="NuDoc\UnknownElement.cs" />
+    <Compile Include="NuDoc\UnknownMember.cs" />
+    <Compile Include="NuDoc\Value.cs" />
+    <Compile Include="NuDoc\Visitor.cs" />
+    <Compile Include="NuDoc\XmlVisitor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NuDoc\namespace.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

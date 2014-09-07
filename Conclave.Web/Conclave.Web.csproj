@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9540E52E-5551-4354-B757-D74B46273B82}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Conclave.Web</RootNamespace>
+    <AssemblyName>Conclave.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr4.StringTemplate">
+      <HintPath>..\lib\Antlr4.StringTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine">
+      <HintPath>..\lib\RazorEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\lib\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\Microsoft.Bcl.Immutable.1.0.30\lib\portable-net45+win8+wp8\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Reactive, Version=1.1.11111.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Providers, Version=1.1.11111.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\System.Reactive.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behaviour\AuthenticateBehaviour.cs" />
+    <Compile Include="Behaviour\BootstrapBehaviour.cs" />
+    <Compile Include="Behaviour\HelloWorldBehaviour.cs" />
+    <Compile Include="Behaviour\IWebBehaviour.cs" />
+    <Compile Include="Behaviour\ParamCheckBehaviour.cs" />
+    <Compile Include="Behaviour\ParseRequestBehaviour.cs" />
+    <Compile Include="Behaviour\ProcessViewsBehaviour.cs" />
+    <Compile Include="Behaviour\RenderBehaviour.cs" />
+    <Compile Include="Behaviour\ViewStateBehaviour.cs" />
+    <Compile Include="Behaviour\View\JsonViewBehaviour.cs" />
+    <Compile Include="Behaviour\View\RazorViewBehaviour.cs" />
+    <Compile Include="Behaviour\View\StringTemplateViewBehaviour.cs" />
+    <Compile Include="Behaviour\View\XslViewBehaviour.cs" />
+    <Compile Include="Behaviour\WebActionBehaviour.cs" />
+    <Compile Include="Behaviour\WebBehaviour.cs" />
+    <Compile Include="Behaviour\View\XmlViewBehaviour.cs" />
+    <Compile Include="UrlInfo.cs" />
+    <Compile Include="WebApplication.cs" />
+    <Compile Include="WebContext.cs" />
+    <Compile Include="WebException.cs" />
+    <Compile Include="WebRequest.cs" />
+    <Compile Include="WebResponse.cs" />
+    <Compile Include="DefaultHandler.cs" />
+    <Compile Include="IConclaveHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Conclave.Data\Conclave.Data.csproj">
+      <Project>{9cf17a72-a4cc-4230-b051-02a1fa35b2fc}</Project>
+      <Name>Conclave.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave.Map.Store.MySql\Conclave.Map.Store.MySql.csproj">
+      <Project>{6cb79fdd-4f62-47bf-ba67-504cf6c08eb2}</Project>
+      <Name>Conclave.Map.Store.MySql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave.Map\Conclave.Map.csproj">
+      <Project>{3bb6cacd-b428-46e7-878a-5f29a08d0df7}</Project>
+      <Name>Conclave.Map</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave.Process\Conclave.Process.csproj">
+      <Project>{038efc4c-f6ee-4392-b496-f9f56b35c83d}</Project>
+      <Name>Conclave.Process</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave\Conclave.csproj">
+      <Project>{3a0068df-7657-42c6-abf2-bc3887635b71}</Project>
+      <Name>Conclave</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Behaviours.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y $(TargetDir)\Conclave.*.dll $(SolutionDir)\export</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

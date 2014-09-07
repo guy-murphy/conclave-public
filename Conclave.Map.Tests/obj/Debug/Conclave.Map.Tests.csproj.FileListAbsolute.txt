@@ -1,0 +1,16 @@
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\Conclave.Map.Tests.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\Conclave.Map.Tests.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\Conclave.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\Conclave.Map.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\Conclave.Data.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\Conclave.Map.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\Conclave.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\Conclave.Data.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\Newtonsoft.Json.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\obj\Debug\Conclave.Map.Tests.csprojResolveAssemblyReference.cache
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\obj\Debug\Conclave.Map.Tests.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\obj\Debug\Conclave.Map.Tests.pdb
+e:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\System.Collections.Immutable.dll
+e:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\System.Collections.Immutable.xml

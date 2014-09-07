@@ -1,0 +1,13 @@
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\bin\Debug\Conclave.Parsing.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\bin\Debug\Conclave.Parsing.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\bin\Debug\Conclave.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\bin\Debug\Newtonsoft.Json.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\bin\Debug\System.Threading.Tasks.Dataflow.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\bin\Debug\Conclave.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\bin\Debug\Conclave.xml
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\bin\Debug\Newtonsoft.Json.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\bin\Debug\Newtonsoft.Json.xml
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\bin\Debug\System.Threading.Tasks.Dataflow.xml
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\obj\Debug\Conclave.Parsing.csprojResolveAssemblyReference.cache
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\obj\Debug\Conclave.Parsing.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Parsing\obj\Debug\Conclave.Parsing.pdb

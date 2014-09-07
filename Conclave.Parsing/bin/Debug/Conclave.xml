@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Conclave</name>
+    </assembly>
+    <members>
+        <member name="T:Conclave.Collections.ConcurrentDataCollection`1">
+            <summary>
+            An implementation of <see cref="T:Conclave.Collections.IDataCollection`1"/> that
+            is safe for concurrent use.
+            </summary>
+            <typeparam name="T">The type of the elements in the collection.</typeparam>
+        </member>
+        <member name="T:Conclave.Collections.IDataCollection`1">
+             <summary>
+             Represents a collection of <see cref="T:Conclave.IData"/>  objects,
+             that can be accessed by index.
+             </summary>
+            <typeparam name="T">The type of elements in the list.</typeparam>
+        </member>
+        <member name="T:Conclave.IData">
+            <summary>
+            Base interface for data models in Conclave.
+            </summary>
+            <remarks>
+            <para>
+            While this represents a point of extensibility for data models in Conclave this is pretty
+            much limited to simple serialisation. `IData` had more relevance in Acumen
+            pre-extension methods, now it's primary untility is simply to flag what is data-model
+            and to be able to contrain based upon that.
+            </para>
+            <para>
+            This approach to model serialisation is simple, but also fast, uncluttered, and explicit.
+            The writers used obviously are  often used by a whole object graph being
+            written out, and is part of a broader application concern. The writer
+            should not be used in any way that yields side-effects beyond the
+            serialisation at hand. <see cref="M:Conclave.IData.ToXml(System.Xml.XmlWriter)"/> and <see cref="M:Conclave.IData.ToJson(Newtonsoft.Json.JsonWriter)"/>
+            need to be fast and reliable. 
+            </para>
+            <para>
+            Conclave favours an application where XML (or JSON for apps with data clients) is its primary external
+            interface, which is transformed (normally with XSL) into a view stuitable for a particular
+            class of user-agent. Other approaches may have a different regard for a data-model
+            and `IData` serves as a point of extension in those cases perhaps.
+            </para>
+            <para>
+            Extension methods are provided in <see cref="T:Conclave.DataEx"/> to provide `IData.ToXml()` and `IData.ToJson()`.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Conclave.IData.ToXml(System.Xml.XmlWriter)">
+            <summary>
+            Produces an Xml representation of the model.
+            </summary>
+            <param name="writer">The writer to used to write the Xml to. </param>
+        </member>
+        <member name="M:Conclave.IData.ToJson(Newtonsoft.Json.JsonWriter)">
+            <summary>
+            Produces a Json respresentation of the model.
+            </summary>
+            <param name="writer">The writer to use for producing JSON.</param>
+        </member>
+        <member name="M:Conclave.Collections.ConcurrentDataCollection`1.#ctor">
+            <summary>
+            Instantiates a new empty collection.
+            </summary>
+        </member>
+        <member name="M:Conclave.Collections.ConcurrentDataCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Instanciates a new data collection with elements
+            copied from the provided collection.
+            </summary>
+            <param name="collection">
+            The collection whose elements are copied into the
+            new data collection.
+            </param>
+        </member>
+        <member name="M:Conclave.Collections.ConcurrentDataCollection`1.ContentToXml(System.Xml.XmlWriter)">
+            <summary>
+            Produces an XML representation of the collections elements  to a provided writer.
+            </summary>
+            <param name="writer">
+            The <see cref="T:System.Xml.XmlWriter"/> the representation is written to.
+            </param>
+        </member>
+        <member name="M:Conclave.Collections.ConcurrentDataCollection`1.ContextToJson(Newtonsoft.Json.JsonWriter)">
+            <summary>
+            Produces an JSON representation of the collection to a provided writer.
+            </summary>
+            <param name="writer">
+            The <see cref="T:Newtonsoft.Json.JsonWriter"/> the representation is written to.
+            </param>
+        </member>
+        <member name="M:Conclave.Collections.ConcurrentDataCollection`1.ToXml(System.Xml.XmlWriter)">
+            <summary>
+            Produces an XML representation of the collection  to a provided writer.
+            </summary>
+            <param name="writer">
+            The <see cref="T:System.Xml.XmlWriter"/> the representation is written to.
+            </param>
+        </member>
+        <member name="M:Conclave.Collections.ConcurrentDataCollection`1.ToJson(Newtonsoft.Json.JsonWriter)">
+            <summary>
+            Produces an JSON representation of the collection  to a provided writer.
+            </summary>
+            <param name="writer">
+            The <see cref="T:Newtonsoft.Json.JsonWriter"/> the representation is written to.
+            </param>
+        </member>
+        <member name="T:Conclave.Collections.IDataDictionary`1">
+            <summary>
+            Represents a generic dictionary that
+            implements <see cref="T:Conclave.IData"/>, where the keys are strings.
+            </summary>
+            <typeparam name="T">The type of the element values.</typeparam>
+        </member>
+        <member name="M:Conclave.Collections.IDataDictionary`1.Import(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,`0}})">
+            <summary>
+            Import the provided key/value pairs into the dictionary.
+            </summary>
+            <param name="other">The key/value pairs to copy.</param>
+            <returns>
+            This dictionary.
+            </returns>
+        </member>
+        <member name="T:Conclave.Collections.DataDictionary`1">
+            <summary>
+            A collection of key/value pairs, where the key is a string.
+            </summary>
+            <typeparam name="TValue">The type of the element values.</typeparam>
+        </member>
+        <member name="M:Conclave.Collections.DataDictionary`1.#ctor">
+            <summary>
+            Instantiates a new empty instance of the dictionary.
+            </summary>
+        </member>
+        <member name="M:Conclave.Collections.DataDictionary`1.#ctor(System.Collections.Generic.IDictionary{System.String,`0})">
+            <summary>
+            instantiates a new dictionary with the elements
+            copied over from the dictionary provided.
+            </summary>
+            <param name="other">
+            The dictionary to copy elements from.
+            </param>
+        </member>
+        <member name="M:Conclave.Collections.DataDictionary`1.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,`0}})">
+            <summary>
+            instantiates a new dictionary with the elements
+            copied from iterating over the key/value pairs provided.
+            </summary>
+            <param name="other">The key/value pairs to copy.</param>
+        </member>
+        <member name="T:Conclave.Collections.DataCollection`1">
+            <summary>
+            An implementation of <see cref="T:Conclave.Collections.IDataCollection`1"/> as a simple <see cref="T:System.Collections.Generic.List`1"/>. 
+            </summary>
+            <typeparam name="T">The type of elements in the list.</typeparam>
+        </member>
+        <member name="M:Conclave.Collections.DataCollection`1.#ctor">
+            <summary>
+            Instanciates a new, empty data collection.
+            </summary>
+        </member>
+        <member name="M:Conclave.Collections.DataCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Instanciates a new data collection with elements
+            copied from the provided collection.
+            </summary>
+            <param name="collection">
+            The collection whose elements are copied into the
+            new data collection.
+            </param>
+        </member>
+        <member name="M:Conclave.Collections.DataCollection`1.ContentToXml(System.Xml.XmlWriter)">
+            <summary>
+            Produces an XML representation of the dictionaries elements,
+            to a provided writer.
+            </summary>
+            <param name="writer">
+            The <see cref="T:System.Xml.XmlWriter"/> the representation is written to.
+            </param>
+        </member>
+        <member name="M:Conclave.Collections.DataCollection`1.ContextToJson(Newtonsoft.Json.JsonWriter)">
+            <summary>
+            Produces an JSON representation of the dictionaries elements,
+            to a provided writer.
+            </summary>
+            <param name="writer">
+            The <see cref="T:Newtonsoft.Json.JsonWriter"/> the representation is written to.
+            </param>
+        </member>
+        <member name="M:Conclave.Collections.DataCollection`1.ToXml(System.Xml.XmlWriter)">
+            <summary>
+            Produces an XML representation of the dictionaries  to a provided writer.
+            </summary>
+            <param name="writer">
+            The <see cref="T:System.Xml.XmlWriter"/> the representation is written to.
+            </param>
+        </member>
+        <member name="M:Conclave.Collections.DataCollection`1.ToJson(Newtonsoft.Json.JsonWriter)">
+            <summary>
+            Produces an JSON representation of the dictionaries  to a provided writer.
+            </summary>
+            <param name="writer">
+            The <see cref="T:Newtonsoft.Json.JsonWriter"/> the representation is written to.
+            </param>
+        </member>
+        <member name="T:Conclave.Collections.DataModel">
+            <summary>
+            A <see cref="T:System.Dynamic.DynamicObject"/> implementing
+            an <see cref="T:Conclave.Collections.IDataDictionary`1"/> .
+            </summary>
+            <remarks>
+            <para>
+            This class is intended to help with exposing models to
+            Razor templates, as it allows ad hoc properties
+            to be used as dictionary keys, `model.UserDetails.Name` rather
+            than `model["UserDetails"].Name`
+            </para>
+            <para>
+            The initial idea was for  the `ControlState` to be
+            one of these. When I start playing about with Razor
+            a bit more I'll test it to see if there's any consequences.
+            </para>
+            </remarks>
+        </member>
+        <member name="T:Conclave.Extensions.DictionaryEx">
+            <summary>
+            Utility extension methods provided for dictionaries.
+            </summary>
+        </member>
+        <member name="M:Conclave.Extensions.DictionaryEx.Import``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.IDictionary{``0,``1})">
+            <summary>
+            Copies the elements from one dictionary to another.
+            </summary>
+            <typeparam name="TKey">The type of the dictionary keys.</typeparam>
+            <typeparam name="TValue">The type of the dictionary values.</typeparam>
+            <param name="self">The dictionary being acted on.</param>
+            <param name="other">The dictionary being copied from.</param>
+        </member>
+        <member name="M:Conclave.Extensions.DictionaryEx.ContentToXml(System.Collections.Generic.IDictionary{System.String,Conclave.IData},System.Xml.XmlWriter)">
+            <summary>
+            Produces an XML representation of the elements of a dictionary.
+            </summary>
+            <param name="self">The dictionary being acted upon.</param>
+            <param name="writer">
+            The <see cref="T:System.Xml.XmlWriter"/> the representation
+            is written to.
+            </param>
+        </member>
+        <member name="T:Conclave.Extensions.ListEx">
+            <summary>
+            Utility extension methods provided for lists.
+            </summary>
+            <remarks>
+            Just some methods to allow a list to be treated as a stack.
+            If a stack is being used as a context in tree processing,
+            sometimes being able to peek at more than the last element,
+            or also treat the stack like a list is useful.
+            </remarks>
+        </member>
+        <member name="M:Conclave.Extensions.ListEx.Push``1(System.Collections.Generic.List{``0},``0)">
+            <summary>
+            Pushes an elelent onto the list as if it were a stack.
+            </summary>
+            <typeparam name="T">The type of the list elements.</typeparam>
+            <param name="self">The list being acted on.</param>
+            <param name="item">The element being pushed onto the list.</param>
+            <returns>The list being acted on.</returns>
+        </member>
+        <member name="M:Conclave.Extensions.ListEx.Pop``1(System.Collections.Generic.List{``0})">
+            <summary>
+            Pops an element from the list as if it were a stack.
+            </summary>
+            <typeparam name="T">The type of the list elements.</typeparam>
+            <param name="self">The list being acted on.</param>
+            <returns>The element that was poped.</returns>
+        </member>
+        <member name="M:Conclave.Extensions.ListEx.Peek``1(System.Collections.Generic.List{``0},System.Int32)">
+            <summary>
+            Provides an index of the list in reverse order,
+            with `list.Peek(0)` considering the last element
+            of the list, and `list.Peek(1)` being the penultimate
+            element of the list. No bounds checking is provided.
+            </summary>
+            <typeparam name="T">The type of the list elements.</typeparam>
+            <param name="self">The list being acted on.</param>
+            <param name="i">The index of the peek.</param>
+            <returns>The element found at the index.</returns>
+        </member>
+        <member name="M:Conclave.Extensions.ListEx.Peek``1(System.Collections.Generic.List{``0})">
+            <summary>
+            Takes a look at the last element of a list without removing it,
+            as if it were a stack.
+            </summary>
+            <typeparam name="T">The type of the list elements.</typeparam>
+            <param name="self">The list being acted on.</param>
+            <returns>The last element of the list.</returns>
+        </member>
+        <member name="T:Conclave.Extensions.StringBuilderEx">
+            <summary>
+            Some utility extension methods provided for string builders.
+            </summary>
+        </member>
+        <member name="M:Conclave.Extensions.StringBuilderEx.Filter(System.Text.StringBuilder,System.Predicate{System.Char})">
+            <summary>
+            Filters a `StringBuilder`, removing any elements
+            that the provided predicate returns true for.
+            </summary>
+            <param name="self">The string builder being acted upon.</param>
+            <param name="test">The predicate to test each element for removal.</param>
+            <returns>The string builder being acted upon.</returns>
+        </member>
+        <member name="M:Conclave.Extensions.StringBuilderEx.RemoveNonNumeric(System.Text.StringBuilder)">
+            <summary>
+            Removes all non-numeric characters from the string builder.
+            </summary>
+            <param name="self">The string builder being acted upon.</param>
+            <returns>The string builder being acted upon.</returns>
+        </member>
+        <member name="M:Conclave.Extensions.StringBuilderEx.RemoveNonAlpha(System.Text.StringBuilder)">
+            <summary>
+            Removes all the non-alphabetic characters from the string builder.
+            </summary>
+            <param name="self">The string builder being acted upon.</param>
+            <returns>The string builder being acted upon.</returns>
+        </member>
+        <member name="M:Conclave.Extensions.StringBuilderEx.RemoveNonAlphaNumeric(System.Text.StringBuilder)">
+            <summary>
+            Removes all non-alphanumeric characters from the string builder.
+            </summary>
+            <param name="self">The string builder being acted upon.</param>
+            <returns>The string builder being acted upon.</returns>
+        </member>
+        <member name="M:Conclave.Extensions.StringBuilderEx.RemoveWhitespace(System.Text.StringBuilder)">
+            <summary>
+            Removes all whitespace from the string builder.
+            </summary>
+            <param name="self">The string builder being acted upon.</param>
+            <returns>The string builder being acted upon.</returns>
+        </member>
+        <member name="M:Conclave.Extensions.StringBuilderEx.TrimLeftBy(System.Text.StringBuilder,System.Int32)">
+            <summary>
+            Removes a specified number of characters from the left-side
+            of the string builder.
+            </summary>
+            <param name="self">The string builder being acted upon.</param>
+            <param name="amount"></param>
+            <returns>The string builder being acted upon.</returns>
+        </member>
+        <member name="M:Conclave.Extensions.StringBuilderEx.TrimRightBy(System.Text.StringBuilder,System.Int32)">
+            <summary>
+            Removes a specified number of characters from the right-side
+            of the string builder.
+            </summary>
+            <param name="self">The string builder being acted upon.</param>
+            <param name="amount"></param>
+            <returns>The string builder being acted upon.</returns>
+        </member>
+        <member name="M:Conclave.Extensions.StringBuilderEx.TrimEndsBy(System.Text.StringBuilder,System.Int32)">
+            <summary>
+            Removes a specified number of characters from each end
+            of the string builder.
+            </summary>
+            <param name="self">The string builder being acted upon.</param>
+            <param name="amount"></param>
+            <returns>The string builder being acted upon.</returns>
+        </member>
+        <member name="M:Conclave.Extensions.StringEx.HasValue(System.String)">
+            <summary>
+            Determines if the string is not null
+            and has a length greater than zero.
+            </summary>
+            <param name="self">The subject of extension.</param>
+            <returns>
+            Returns <b>true</b> if the string has a values;
+            otherwise returns <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:Conclave.Extensions.StringEx.AssertHasValue(System.String,System.String)">
+            <summary>
+            Checks if a string has a value and if not
+            throws an <see cref="T:System.ArgumentNullException"/>.
+            </summary>
+            <param name="self">The subject of extension.</param>
+            <param name="message">
+            The message to use as part of the exception.
+            </param>
+            <seealso cref="M:Conclave.Extensions.StringEx.HasValue(System.String)"/>
+        </member>
+        <member name="M:Conclave.Extensions.StringEx.Prepend(System.String,System.Int32,System.Char)">
+            <summary>
+            Places the 
+            </summary>
+            <param name="self"></param>
+            <param name="number"></param>
+            <param name="character"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Conclave.Extensions.StringEx.IsXmlName(System.String)">
+            <summary>
+            Determines if a string is a valid XML tag name.
+            </summary>
+            <param name="self">The subject of extension.</param>
+            <returns>
+            Returns <b>true</b> if the string is a valid XML name;
+            otherwise, returns <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:Conclave.Extensions.StringEx.RemoveInvalidXmlCharacters(System.String)">
+            <summary>
+            This method ensures that the returned string has only valid XML unicode
+            charcters as specified in the XML 1.0 standard. For reference please see
+            http://www.w3.org/TR/2000/REC-xml-20001006#NT-Char for the
+            standard reference.
+            </summary>
+            <param name="self">The string being acted upon.</param>
+            <returns>A copy of the input string with non-valid charcters removed.</returns>
+        </member>
+        <member name="T:Conclave.DataEx">
+            <summary>
+            Extension methods for <see cref="T:Conclave.IData"/>
+            largely concerned with supporting both
+            `.ToXml(...)` and `.ToJson(...)`
+            </summary>
+        </member>
+        <member name="M:Conclave.DataEx.ToXml(Conclave.IData)">
+            <summary>
+            Generates an XML representation of the specified <see cref="T:Conclave.IData"/> object.
+            </summary>
+            <param name="self">The data model to produce XML for.</param>
+            <returns>
+            Returns the XML representation as a `string`.
+            </returns>
+            <remarks>
+            This is implemented by creating a `StringWriter` and
+            calling `.ToXml(IData, StringWriter)`
+            </remarks>
+        </member>
+        <member name="M:Conclave.DataEx.ToXml(Conclave.IData,System.IO.TextWriter)">
+            <summary>
+            
+            </summary>
+            <param name="self"></param>
+            <param name="writer"></param>
+        </member>
+        <member name="T:Conclave.IValidates">
+            <summary>
+            An interface for a class that provides checks
+            to determine is its data is valid.
+            </summary>
+            <remarks>
+            This was originally part of `IData`, but as
+            that model moved toward an immutable one,
+            the emphasis of validation was lessened
+            and moved to be the responsibility of the
+            model constructor. Given an immutable model
+            it simply shoulnd't be instanciated in an
+            invalid state.
+            </remarks>
+        </member>
+        <member name="P:Conclave.IValidates.IsValid">
+            <summary>
+            Indicates whether or not a model is
+            in a valid state.
+            </summary>
+            <value>
+            `true` is the model is in a valid state;
+            otherwise, `false`.
+            </value>
+        </member>
+        <member name="T:Conclave.TextData">
+            <summary>
+            An implementation of <see cref="T:Conclave.IData"/> that
+            represents a simple text node within a model.
+            </summary>
+        </member>
+        <member name="M:Conclave.TextData.op_Implicit(System.String)~Conclave.TextData">
+            <summary>
+            Implicitly casts a string of text into a `TextData` object,
+            by instantiating a `TextData` object from the string.
+            </summary>
+            <param name="text">The string of text to be cast.</param>
+            <returns>
+            Returns the `TextData` object created.
+            </returns>
+        </member>
+        <member name="M:Conclave.TextData.op_Implicit(Conclave.TextData)~System.String">
+            <summary>
+            Implicitly casts a `TextData` object into a string.
+            </summary>
+            <param name="text">The `TextData` object to cast.</param>
+            <returns>Returns the string value of the `TextData` object.</returns>
+        </member>
+        <member name="M:Conclave.TextData.#ctor(System.String)">
+            <summary>
+            Instantiates a new `TextData` object with the value
+            of the text provided.
+            </summary>
+            <param name="text">The text to initialise from.</param>
+        </member>
+        <member name="M:Conclave.TextData.#ctor(Conclave.TextData)">
+            <summary>
+            Instantiates a new `TextData` object as a copy
+            of the one provided.
+            </summary>
+            <param name="text">The `TextData` to copy.</param>
+        </member>
+        <member name="M:Conclave.TextData.Clone">
+            <summary>
+            Creates a new instance as a copy
+            of the original.
+            </summary>
+            <returns>
+            A copy as a `TextData` object.
+            </returns>
+        </member>
+        <member name="P:Conclave.TextData.Value">
+            <summary>
+            The string value of the text data.
+            </summary>
+        </member>
+    </members>
+</doc>

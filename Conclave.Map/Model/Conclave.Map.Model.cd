@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Conclave.Map.Model.Node" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Conclave.Map.Model.Node.Builder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Node.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAAAAAEAAgABAAAAAAAAAAIAEIAAgAAAEAAg=</HashCode>
+      <FileName>Model\Node.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Metadata" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Conclave.Map.Model.Topic" Collapsed="true">
+    <Position X="6.75" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Conclave.Map.Model.Topic.Builder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Topic.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="Occurrences" Type="Conclave.Map.Model.Occurrence">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.05" Y="0.579" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACACAAAQAAAAAAANgAAAAAAAAAAAAIAkKAAgAAAAAzA=</HashCode>
+      <FileName>Model\Topic.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Associations" />
+      <Property Name="Occurrences" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Conclave.Map.Model.Association" Collapsed="true">
+    <Position X="9.75" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Conclave.Map.Model.Association.Builder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Association.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACAIAACAAAAAACQJkAAAQAAQAAAAAIAEKQAhAAAAAjA=</HashCode>
+      <FileName>Model\Association.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Conclave.Map.Model.Metadata" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Conclave.Map.Model.Metadata.Builder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Metadata.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ADAIIAAAAAAAACAJgAAAQAQQAAAAAIAEKAAgAAAAAjA=</HashCode>
+      <FileName>Model\Metadata.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Conclave.Map.Model.Occurrence" Collapsed="true">
+    <Position X="6.75" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Conclave.Map.Model.Occurrence.Builder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Occurrence.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACAIAAKAJAEAACAJ0AAAQAAQCAAAAJAEKAAhAAAEAzA=</HashCode>
+      <FileName>Model\Occurrence.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.127" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

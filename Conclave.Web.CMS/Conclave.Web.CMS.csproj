@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19539E76-4EC7-4904-8678-7C8224B6EED2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Conclave.Web.CMS</RootNamespace>
+    <AssemblyName>Conclave.Web.CMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\packages\Microsoft.Bcl.Immutable.1.0.30\lib\portable-net45+win8+wp8\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behaviour\AssociationBehaviour.cs" />
+    <Compile Include="Behaviour\MetadataBehaviour.cs" />
+    <Compile Include="Behaviour\OccurrenceBehaviour.cs" />
+    <Compile Include="Behaviour\Topicmap\CreateAssociationBehaviour.cs" />
+    <Compile Include="Behaviour\Topicmap\CreateTopicBehaviour.cs" />
+    <Compile Include="Behaviour\Topicmap\GetAssociationBehaviour.cs" />
+    <Compile Include="Behaviour\Topicmap\GetTopicBehaviour.cs" />
+    <Compile Include="Behaviour\Topicmap\_ResolveMarkdownBehaviour.cs" />
+    <Compile Include="Behaviour\Topicmap\ResolveNavigationBehaviour.cs" />
+    <Compile Include="Behaviour\Topicmap\ResolveOccurrencesBehaviour.cs" />
+    <Compile Include="Behaviour\TopicBehaviour.cs" />
+    <Compile Include="Behaviour\Topicmap\UpdateAssociationBehaviour.cs" />
+    <Compile Include="Behaviour\Topicmap\UpdateMarkdownBehaviour.cs" />
+    <Compile Include="Behaviour\Topicmap\UpdateMetadataBehaviour.cs" />
+    <Compile Include="Behaviour\Topicmap\UpdateOccurrenceBehaviour.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Conclave.Data\Conclave.Data.csproj">
+      <Project>{9cf17a72-a4cc-4230-b051-02a1fa35b2fc}</Project>
+      <Name>Conclave.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave.Map.Store.MySql\Conclave.Map.Store.MySql.csproj">
+      <Project>{6cb79fdd-4f62-47bf-ba67-504cf6c08eb2}</Project>
+      <Name>Conclave.Map.Store.MySql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave.Map\Conclave.Map.csproj">
+      <Project>{3bb6cacd-b428-46e7-878a-5f29a08d0df7}</Project>
+      <Name>Conclave.Map</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave.Process\Conclave.Process.csproj">
+      <Project>{038efc4c-f6ee-4392-b496-f9f56b35c83d}</Project>
+      <Name>Conclave.Process</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave.Web\Conclave.Web.csproj">
+      <Project>{9540e52e-5551-4354-b757-d74b46273b82}</Project>
+      <Name>Conclave.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave\Conclave.csproj">
+      <Project>{3a0068df-7657-42c6-abf2-bc3887635b71}</Project>
+      <Name>Conclave</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y $(TargetDir)\Conclave.*.dll $(SolutionDir)\export</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

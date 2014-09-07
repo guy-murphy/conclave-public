@@ -1,0 +1,159 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Harness", "Conclave.Harness\Conclave.Harness.csproj", "{4CC4E36D-1995-4DD4-B11F-EA20B0197260}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave", "Conclave\Conclave.csproj", "{3A0068DF-7657-42C6-ABF2-BC3887635B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Web", "Conclave.Web\Conclave.Web.csproj", "{9540E52E-5551-4354-B757-D74B46273B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Process", "Conclave.Process\Conclave.Process.csproj", "{038EFC4C-F6EE-4392-B496-F9F56B35C83D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Data", "Conclave.Data\Conclave.Data.csproj", "{9CF17A72-A4CC-4230-B051-02A1FA35B2FC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3A0068DF-7657-42C6-ABF2-BC3887635B71} = {3A0068DF-7657-42C6-ABF2-BC3887635B71}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Conclave.CMS", "http://localhost/Conclave.CMS", "{4AE6800A-B848-4D5D-BC25-2B58673BC808}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{9540e52e-5551-4354-b757-d74b46273b82}|Conclave.Web.dll;{3A0068DF-7657-42C6-ABF2-BC3887635B71}|Conclave.dll;{038EFC4C-F6EE-4392-B496-F9F56B35C83D}|Conclave.Process.dll;{3bb6cacd-b428-46e7-878a-5f29a08d0df7}|Conclave.Map.dll;{9CF17A72-A4CC-4230-B051-02A1FA35B2FC}|Conclave.Data.dll;{6cb79fdd-4f62-47bf-ba67-504cf6c08eb2}|Conclave.Map.Store.MySql.dll;{19539e76-4ec7-4904-8678-7c8224b6eed2}|Conclave.Web.CMS.dll;{a6a879d7-9423-44ee-a334-9796e3fbf6c7}|Conclave.MySql.dll;{13d3effb-f49d-408c-96d9-f0ab31f9a315}|Conclave.SqlServer.dll;{63ca0c42-6567-4c73-a7b2-db82deb33fef}|Conclave.Mongo.dll;{c5c6b25c-71a8-4c0f-86ef-56ce889c3251}|Conclave.Web.CMS.Markdown.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Conclave.CMS"
+		Debug.AspNetCompiler.PhysicalPath = "Conclave.CMS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Conclave.CMS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Conclave.CMS"
+		Release.AspNetCompiler.PhysicalPath = "Conclave.CMS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Conclave.CMS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Conclave.CMS\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{9540E52E-5551-4354-B757-D74B46273B82} = {9540E52E-5551-4354-B757-D74B46273B82}
+		{038EFC4C-F6EE-4392-B496-F9F56B35C83D} = {038EFC4C-F6EE-4392-B496-F9F56B35C83D}
+		{9CF17A72-A4CC-4230-B051-02A1FA35B2FC} = {9CF17A72-A4CC-4230-B051-02A1FA35B2FC}
+		{3BB6CACD-B428-46E7-878A-5F29A08D0DF7} = {3BB6CACD-B428-46E7-878A-5F29A08D0DF7}
+		{3A0068DF-7657-42C6-ABF2-BC3887635B71} = {3A0068DF-7657-42C6-ABF2-BC3887635B71}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Map", "Conclave.Map\Conclave.Map.csproj", "{3BB6CACD-B428-46E7-878A-5F29A08D0DF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Map.Tests", "Conclave.Map.Tests\Conclave.Map.Tests.csproj", "{30329257-D84C-417A-B963-D5B7CF84B780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Map.Store.MySql", "Conclave.Map.Store.MySql\Conclave.Map.Store.MySql.csproj", "{6CB79FDD-4F62-47BF-BA67-504CF6C08EB2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9CF17A72-A4CC-4230-B051-02A1FA35B2FC} = {9CF17A72-A4CC-4230-B051-02A1FA35B2FC}
+		{3BB6CACD-B428-46E7-878A-5F29A08D0DF7} = {3BB6CACD-B428-46E7-878A-5F29A08D0DF7}
+		{3A0068DF-7657-42C6-ABF2-BC3887635B71} = {3A0068DF-7657-42C6-ABF2-BC3887635B71}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Web.CMS", "Conclave.Web.CMS\Conclave.Web.CMS.csproj", "{19539E76-4EC7-4904-8678-7C8224B6EED2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0EAB6E2C-E62E-4CF8-9BD0-20C77AAF0EEF}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+		solution.md = solution.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.MySql", "Conclave.MySql\Conclave.MySql.csproj", "{A6A879D7-9423-44EE-A334-9796E3FBF6C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.SqlServer", "Conclave.SqlServer\Conclave.SqlServer.csproj", "{13D3EFFB-F49D-408C-96D9-F0AB31F9A315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Mongo", "Conclave.Mongo\Conclave.Mongo.csproj", "{63CA0C42-6567-4C73-A7B2-DB82DEB33FEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Documentation", "Conclave.Documentation\Conclave.Documentation.csproj", "{FD04EE6A-1C10-45DE-8E9B-46B255512C64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Documentation.Generator", "Conclave.Documentation.Generator\Conclave.Documentation.Generator.csproj", "{08A24CE7-6AFD-4C43-99AC-B16D4D9ADF07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Razor", "Conclave.Razor\Conclave.Razor.csproj", "{86D8CFB6-AED2-42A2-960C-1CA25AE51066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Web.CMS.Markdown", "Conclave.Web.CMS.Markdown\Conclave.Web.CMS.Markdown.csproj", "{C5C6B25C-71A8-4C0F-86EF-56CE889C3251}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CC4E36D-1995-4DD4-B11F-EA20B0197260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC4E36D-1995-4DD4-B11F-EA20B0197260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC4E36D-1995-4DD4-B11F-EA20B0197260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC4E36D-1995-4DD4-B11F-EA20B0197260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A0068DF-7657-42C6-ABF2-BC3887635B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0068DF-7657-42C6-ABF2-BC3887635B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0068DF-7657-42C6-ABF2-BC3887635B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0068DF-7657-42C6-ABF2-BC3887635B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9540E52E-5551-4354-B757-D74B46273B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9540E52E-5551-4354-B757-D74B46273B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9540E52E-5551-4354-B757-D74B46273B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9540E52E-5551-4354-B757-D74B46273B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038EFC4C-F6EE-4392-B496-F9F56B35C83D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038EFC4C-F6EE-4392-B496-F9F56B35C83D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038EFC4C-F6EE-4392-B496-F9F56B35C83D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038EFC4C-F6EE-4392-B496-F9F56B35C83D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF17A72-A4CC-4230-B051-02A1FA35B2FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF17A72-A4CC-4230-B051-02A1FA35B2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF17A72-A4CC-4230-B051-02A1FA35B2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF17A72-A4CC-4230-B051-02A1FA35B2FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AE6800A-B848-4D5D-BC25-2B58673BC808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE6800A-B848-4D5D-BC25-2B58673BC808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE6800A-B848-4D5D-BC25-2B58673BC808}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE6800A-B848-4D5D-BC25-2B58673BC808}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3BB6CACD-B428-46E7-878A-5F29A08D0DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB6CACD-B428-46E7-878A-5F29A08D0DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB6CACD-B428-46E7-878A-5F29A08D0DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB6CACD-B428-46E7-878A-5F29A08D0DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30329257-D84C-417A-B963-D5B7CF84B780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30329257-D84C-417A-B963-D5B7CF84B780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30329257-D84C-417A-B963-D5B7CF84B780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30329257-D84C-417A-B963-D5B7CF84B780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CB79FDD-4F62-47BF-BA67-504CF6C08EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CB79FDD-4F62-47BF-BA67-504CF6C08EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CB79FDD-4F62-47BF-BA67-504CF6C08EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CB79FDD-4F62-47BF-BA67-504CF6C08EB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19539E76-4EC7-4904-8678-7C8224B6EED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19539E76-4EC7-4904-8678-7C8224B6EED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19539E76-4EC7-4904-8678-7C8224B6EED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19539E76-4EC7-4904-8678-7C8224B6EED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A879D7-9423-44EE-A334-9796E3FBF6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A879D7-9423-44EE-A334-9796E3FBF6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A879D7-9423-44EE-A334-9796E3FBF6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A879D7-9423-44EE-A334-9796E3FBF6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D3EFFB-F49D-408C-96D9-F0AB31F9A315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D3EFFB-F49D-408C-96D9-F0AB31F9A315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D3EFFB-F49D-408C-96D9-F0AB31F9A315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D3EFFB-F49D-408C-96D9-F0AB31F9A315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63CA0C42-6567-4C73-A7B2-DB82DEB33FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CA0C42-6567-4C73-A7B2-DB82DEB33FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CA0C42-6567-4C73-A7B2-DB82DEB33FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CA0C42-6567-4C73-A7B2-DB82DEB33FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD04EE6A-1C10-45DE-8E9B-46B255512C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD04EE6A-1C10-45DE-8E9B-46B255512C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD04EE6A-1C10-45DE-8E9B-46B255512C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD04EE6A-1C10-45DE-8E9B-46B255512C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A24CE7-6AFD-4C43-99AC-B16D4D9ADF07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A24CE7-6AFD-4C43-99AC-B16D4D9ADF07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A24CE7-6AFD-4C43-99AC-B16D4D9ADF07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A24CE7-6AFD-4C43-99AC-B16D4D9ADF07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D8CFB6-AED2-42A2-960C-1CA25AE51066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D8CFB6-AED2-42A2-960C-1CA25AE51066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D8CFB6-AED2-42A2-960C-1CA25AE51066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D8CFB6-AED2-42A2-960C-1CA25AE51066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C6B25C-71A8-4C0F-86EF-56CE889C3251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C6B25C-71A8-4C0F-86EF-56CE889C3251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C6B25C-71A8-4C0F-86EF-56CE889C3251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C6B25C-71A8-4C0F-86EF-56CE889C3251}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

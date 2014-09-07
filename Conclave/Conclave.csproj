@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A0068DF-7657-42C6-ABF2-BC3887635B71}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Conclave</RootNamespace>
+    <AssemblyName>Conclave</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Json.NET\Net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algorithms\Murmur3.cs" />
+    <Compile Include="Aliases\DoubleKeyConditionLists.cs" />
+    <Compile Include="Collections\ConcurrentDataCollection.cs" />
+    <Compile Include="Collections\ConcurrentDataDictionary.cs" />
+    <Compile Include="Collections\DataDictionary.cs" />
+    <Compile Include="Collections\DataCollection.cs" />
+    <Compile Include="Collections\DataModel.cs" />
+    <Compile Include="Collections\IDataDictionary.cs" />
+    <Compile Include="Extensions\ArrayEx.cs" />
+    <Compile Include="Extensions\DictionaryEx.cs" />
+    <Compile Include="Extensions\EnumerableEx.cs" />
+    <Compile Include="Extensions\ListEx.cs" />
+    <Compile Include="Extensions\StringBuilderEx.cs" />
+    <Compile Include="Extensions\StringEx.cs" />
+    <Compile Include="Collections\IDataCollection.cs" />
+    <Compile Include="IData.cs" />
+    <Compile Include="DataEx.cs" />
+    <Compile Include="IValidates.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Text.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="project.md" />
+    <None Include="readme.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y $(TargetDir)\Conclave.dll $(SolutionDir)\export</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,4 @@
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation\bin\Debug\Conclave.Documentation.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation\bin\Debug\Conclave.Documentation.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation\obj\Debug\Conclave.Documentation.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation\obj\Debug\Conclave.Documentation.pdb

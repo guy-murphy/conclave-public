@@ -1,0 +1,8 @@
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation.Generator\bin\Debug\Conclave.Documentation.Generator.exe.config
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation.Generator\bin\Debug\Conclave.Documentation.Generator.exe
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation.Generator\bin\Debug\Conclave.Documentation.Generator.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation.Generator\bin\Debug\Conclave.Documentation.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation.Generator\bin\Debug\Conclave.Documentation.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation.Generator\obj\Debug\Conclave.Documentation.Generator.csprojResolveAssemblyReference.cache
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation.Generator\obj\Debug\Conclave.Documentation.Generator.exe
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation.Generator\obj\Debug\Conclave.Documentation.Generator.pdb

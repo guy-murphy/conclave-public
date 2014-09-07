@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+	<description>Behaviours</description>
+	
+	<!-- 
+		behaviours: singletons 
+		singletons are the default in Spring, so unless you see
+		singleton="false" on an object defination, it's a singleton
+	-->
+
+	<object name="request-behaviours" type="System.Collections.Generic.List&lt;Conclave.Process.IProcessBehaviour&gt;">
+		<constructor-arg index="0">
+			<list element-type="Conclave.Process.IProcessBehaviour">
+				<object type="Conclave.Process.SimpleSequenceBehaviour">
+					<constructor-arg index="0" value="process-request" />
+					<constructor-arg index="1" ref="life-cycle" />
+				</object>
+				<object type="Conclave.Web.Behaviour.BootstrapBehaviour">
+					<constructor-arg index="0" value="bootstrap" />
+					<constructor-arg index="1">
+						<dictionary key-type="string" value-type="string">
+							<entry key="area" value="default" />
+							<entry key="concern" value="default" />
+							<entry key="action" value="default" />
+							<entry key="app-path" value="/conclave.cms" />
+						</dictionary>
+					</constructor-arg>
+				</object>
+				<object type="Conclave.Web.Behaviour.ParseRequestBehaviour, Conclave.Web">
+					<constructor-arg index="0" value="parse-request" />
+					<constructor-arg index="1" value="Conclave.CMS" />
+				</object>
+				<object type="Conclave.Web.Behaviour.AuthenticateBehaviour, Conclave.Web">
+					<constructor-arg index="0" value="authenticate" />
+				</object>
+				<object type="Conclave.Web.Behaviour.ViewStateBehaviour, Conclave.Web">
+					<constructor-arg index="0" value="view-state" />
+				</object>
+				<object type="Conclave.Web.Behaviour.ProcessViewsBehaviour, Conclave.Web">
+					<constructor-arg index="0" value="process-views" />
+				</object>
+				<object type="Conclave.Web.Behaviour.RenderBehaviour, Conclave.Web">
+					<constructor-arg index="0" value="render" />
+				</object>
+
+				<!-- app -->
+
+				<object type="Conclave.Web.CMS.Behaviour.Topicmap.ResolveMarkdownBehaviour, Conclave.Web.CMS.Markdown">
+					<constructor-arg name="message" value="topicmap::resolve-occurrence" />
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.Topicmap.UpdateMarkdownBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="topicmap::update-occurrence-data" />
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.Topicmap.UpdateOccurrenceBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="topicmap::update-occurrence" />
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.Topicmap.ResolveOccurrencesBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="topicmap::resolve-occurrences" />
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.Topicmap.GetTopicBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="topicmap::get-topic" />
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.Topicmap.CreateTopicBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="topicmap::create-topic" />
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.Topicmap.ResolveNavigationBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="topicmap::resolve-navigation" />
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.TopicBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="work" />
+					<property name="MatchingAllParameters">
+						<dictionary key-type="string" value-type="string">
+							<entry key="concern" value="topic" />
+						</dictionary>
+					</property>
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.AssociationBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="work" />
+					<property name="MatchingAllParameters">
+						<dictionary key-type="string" value-type="string">
+							<entry key="concern" value="association" />
+						</dictionary>
+					</property>
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.MetadataBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="work" />
+					<property name="MatchingAllParameters">
+						<dictionary key-type="string" value-type="string">
+							<entry key="concern" value="metadata" />
+						</dictionary>
+					</property>
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.OccurrenceBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="work" />
+					<property name="MatchingAllParameters">
+						<dictionary key-type="string" value-type="string">
+							<entry key="concern" value="occurrence" />
+						</dictionary>
+					</property>
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.Topicmap.UpdateMetadataBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="topicmap::update-metadata" />
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.Topicmap.UpdateAssociationBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="topicmap::update-association" />
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.Topicmap.GetAssociationBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="topicmap::get-association" />
+				</object>
+
+				<object type="Conclave.Web.CMS.Behaviour.Topicmap.CreateAssociationBehaviour, Conclave.Web.CMS">
+					<constructor-arg name="message" value="topicmap::create-association" />
+				</object>
+
+				<!-- views -->
+				<object type="Conclave.Web.Behaviour.View.RazorViewBehaviour, Conclave.Web">
+					<constructor-arg name="message" value="rzr::view" />
+				</object>
+				<object type="Conclave.Web.Behaviour.View.StringTemplateViewBehaviour, Conclave.Web">
+					<constructor-arg name="message" value="st::view" />
+				</object>
+				<object type="Conclave.Web.Behaviour.View.XmlViewBehaviour, Conclave.Web">
+					<constructor-arg name="message" value="xml::view" />
+					<constructor-arg name="contentType" value="text/xml" />
+				</object>
+				<object type="Conclave.Web.Behaviour.View.JsonViewBehaviour, Conclave.Web">
+					<constructor-arg name="message" value="json::view" />
+					<constructor-arg name="contentType" value="text/json" />
+				</object>
+				<object type="Conclave.Web.Behaviour.View.XslViewBehaviour, Conclave.Web">
+					<constructor-arg name="message" value="xslt::view" />
+					<constructor-arg name="contentType" value="text/xml" />
+				</object>
+				<object type="Conclave.Web.Behaviour.View.XslViewBehaviour, Conclave.Web">
+					<constructor-arg name="message" value="xsl::view" />
+					<constructor-arg name="contentType" value="text/html" />
+				</object>
+			</list>
+		</constructor-arg>
+	</object>
+
+</objects>

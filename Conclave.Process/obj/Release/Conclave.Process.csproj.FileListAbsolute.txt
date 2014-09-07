@@ -1,0 +1,16 @@
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\obj\Release\Conclave.Process.csprojResolveAssemblyReference.cache
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\Conclave.Process.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\Conclave.Process.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\Common.Logging.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\Conclave.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\Spring.Aop.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\Spring.Core.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\System.Reactive.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\System.Reactive.Providers.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\Conclave.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\Spring.Aop.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\Spring.Aop.xml
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\Spring.Core.pdb
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\bin\Release\Spring.Core.xml
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\obj\Release\Conclave.Process.dll
+E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Process\obj\Release\Conclave.Process.pdb

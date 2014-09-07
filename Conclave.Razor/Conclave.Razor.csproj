@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86D8CFB6-AED2-42A2-960C-1CA25AE51066}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Conclave.Razor</RootNamespace>
+    <AssemblyName>Conclave.Razor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RazorEngine, Version=3.0.8.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RazorEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behaviour\RazorViewBehaviour.cs" />
+    <Compile Include="Extensions\StringEx.cs" />
+    <Compile Include="Model\Token.cs" />
+    <Compile Include="Model\TokenList.cs" />
+    <Compile Include="Plugins\RazorViewLayoutPlugin.cs" />
+    <Compile Include="Plugins\IRazorViewPlugin.cs" />
+    <Compile Include="Plugins\RazorViewIncludePlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemplateStatus.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Conclave.Data\Conclave.Data.csproj">
+      <Project>{9cf17a72-a4cc-4230-b051-02a1fa35b2fc}</Project>
+      <Name>Conclave.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave.Process\Conclave.Process.csproj">
+      <Project>{038efc4c-f6ee-4392-b496-f9f56b35c83d}</Project>
+      <Name>Conclave.Process</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave.Web\Conclave.Web.csproj">
+      <Project>{9540e52e-5551-4354-b757-d74b46273b82}</Project>
+      <Name>Conclave.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conclave\Conclave.csproj">
+      <Project>{3a0068df-7657-42c6-abf2-bc3887635b71}</Project>
+      <Name>Conclave</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y $(TargetDir)Conclave.*.dll $(SolutionDir)export</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
