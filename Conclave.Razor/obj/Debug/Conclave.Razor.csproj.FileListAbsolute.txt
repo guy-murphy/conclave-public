@@ -34,3 +34,39 @@ E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Razor\obj\
 E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Razor\obj\Debug\Conclave.Razor.dll
 E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Razor\obj\Debug\Conclave.Razor.pdb
 e:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Razor\bin\Debug\System.Collections.Immutable.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Conclave.Razor.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Conclave.Razor.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Conclave.Data.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Conclave.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Conclave.Process.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Conclave.Web.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\RazorEngine.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Autofac.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Newtonsoft.Json.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\System.Reactive.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Spring.Core.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\System.Collections.Immutable.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Autofac.Configuration.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Antlr4.StringTemplate.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Common.Logging.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Antlr3.Runtime.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Conclave.Data.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Conclave.Process.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Conclave.Web.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Conclave.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\RazorEngine.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\RazorEngine.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Autofac.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Autofac.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Newtonsoft.Json.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Newtonsoft.Json.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Spring.Core.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Spring.Core.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\System.Collections.Immutable.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Autofac.Configuration.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Autofac.Configuration.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Antlr4.StringTemplate.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\bin\Debug\Antlr3.Runtime.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\obj\Debug\Conclave.Razor.csprojResolveAssemblyReference.cache
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\obj\Debug\Conclave.Razor.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Razor\obj\Debug\Conclave.Razor.pdb

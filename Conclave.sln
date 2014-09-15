@@ -16,35 +16,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Data", "Conclave.D
 		{3A0068DF-7657-42C6-ABF2-BC3887635B71} = {3A0068DF-7657-42C6-ABF2-BC3887635B71}
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Conclave.CMS", "http://localhost/Conclave.CMS", "{4AE6800A-B848-4D5D-BC25-2B58673BC808}"
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "false"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{9540e52e-5551-4354-b757-d74b46273b82}|Conclave.Web.dll;{3A0068DF-7657-42C6-ABF2-BC3887635B71}|Conclave.dll;{038EFC4C-F6EE-4392-B496-F9F56B35C83D}|Conclave.Process.dll;{3bb6cacd-b428-46e7-878a-5f29a08d0df7}|Conclave.Map.dll;{9CF17A72-A4CC-4230-B051-02A1FA35B2FC}|Conclave.Data.dll;{6cb79fdd-4f62-47bf-ba67-504cf6c08eb2}|Conclave.Map.Store.MySql.dll;{19539e76-4ec7-4904-8678-7c8224b6eed2}|Conclave.Web.CMS.dll;{a6a879d7-9423-44ee-a334-9796e3fbf6c7}|Conclave.MySql.dll;{13d3effb-f49d-408c-96d9-f0ab31f9a315}|Conclave.SqlServer.dll;{63ca0c42-6567-4c73-a7b2-db82deb33fef}|Conclave.Mongo.dll;{c5c6b25c-71a8-4c0f-86ef-56ce889c3251}|Conclave.Web.CMS.Markdown.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/Conclave.CMS"
-		Debug.AspNetCompiler.PhysicalPath = "Conclave.CMS\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Conclave.CMS\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/Conclave.CMS"
-		Release.AspNetCompiler.PhysicalPath = "Conclave.CMS\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Conclave.CMS\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "Conclave.CMS\"
-	EndProjectSection
-	ProjectSection(ProjectDependencies) = postProject
-		{9540E52E-5551-4354-B757-D74B46273B82} = {9540E52E-5551-4354-B757-D74B46273B82}
-		{038EFC4C-F6EE-4392-B496-F9F56B35C83D} = {038EFC4C-F6EE-4392-B496-F9F56B35C83D}
-		{9CF17A72-A4CC-4230-B051-02A1FA35B2FC} = {9CF17A72-A4CC-4230-B051-02A1FA35B2FC}
-		{3BB6CACD-B428-46E7-878A-5F29A08D0DF7} = {3BB6CACD-B428-46E7-878A-5F29A08D0DF7}
-		{3A0068DF-7657-42C6-ABF2-BC3887635B71} = {3A0068DF-7657-42C6-ABF2-BC3887635B71}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Map", "Conclave.Map\Conclave.Map.csproj", "{3BB6CACD-B428-46E7-878A-5F29A08D0DF7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Map.Tests", "Conclave.Map.Tests\Conclave.Map.Tests.csproj", "{30329257-D84C-417A-B963-D5B7CF84B780}"
@@ -78,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Razor", "Conclave.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.Web.CMS.Markdown", "Conclave.Web.CMS.Markdown\Conclave.Web.CMS.Markdown.csproj", "{C5C6B25C-71A8-4C0F-86EF-56CE889C3251}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conclave.CMS", "Conclave.CMS\Conclave.CMS.csproj", "{C2B51233-E4FB-4A11-B8AA-E857ECF8D71C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,10 +77,6 @@ Global
 		{9CF17A72-A4CC-4230-B051-02A1FA35B2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CF17A72-A4CC-4230-B051-02A1FA35B2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF17A72-A4CC-4230-B051-02A1FA35B2FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4AE6800A-B848-4D5D-BC25-2B58673BC808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AE6800A-B848-4D5D-BC25-2B58673BC808}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4AE6800A-B848-4D5D-BC25-2B58673BC808}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AE6800A-B848-4D5D-BC25-2B58673BC808}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{3BB6CACD-B428-46E7-878A-5F29A08D0DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3BB6CACD-B428-46E7-878A-5F29A08D0DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BB6CACD-B428-46E7-878A-5F29A08D0DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -152,6 +121,10 @@ Global
 		{C5C6B25C-71A8-4C0F-86EF-56CE889C3251}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5C6B25C-71A8-4C0F-86EF-56CE889C3251}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5C6B25C-71A8-4C0F-86EF-56CE889C3251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B51233-E4FB-4A11-B8AA-E857ECF8D71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B51233-E4FB-4A11-B8AA-E857ECF8D71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B51233-E4FB-4A11-B8AA-E857ECF8D71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B51233-E4FB-4A11-B8AA-E857ECF8D71C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

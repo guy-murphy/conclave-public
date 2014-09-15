@@ -68,6 +68,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="behaviours.xml" />
+    <Content Include="config.xml" />
     <Content Include="Global.asax" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -81,6 +83,10 @@
       <Project>{038efc4c-f6ee-4392-b496-f9f56b35c83d}</Project>
       <Name>Conclave.Process</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Conclave.Web.CMS\Conclave.Web.CMS.csproj">
+      <Project>{19539e76-4ec7-4904-8678-7c8224b6eed2}</Project>
+      <Name>Conclave.Web.CMS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Conclave.Web\Conclave.Web.csproj">
       <Project>{9540e52e-5551-4354-b757-d74b46273b82}</Project>
       <Name>Conclave.Web</Name>
@@ -90,7 +96,9 @@
       <Name>Conclave</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Unabr.dict" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Views\Razor\default.cshtml" />
   </ItemGroup>

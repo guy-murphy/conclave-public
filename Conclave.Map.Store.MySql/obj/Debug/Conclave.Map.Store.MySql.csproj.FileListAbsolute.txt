@@ -15,3 +15,20 @@ E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Store.
 E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Store.MySql\obj\Debug\Conclave.Map.Store.MySql.pdb
 e:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Store.MySql\bin\Debug\System.Collections.Immutable.dll
 e:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Store.MySql\bin\Debug\System.Collections.Immutable.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\Conclave.Map.Store.MySql.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\Conclave.Map.Store.MySql.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\Conclave.Data.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\Conclave.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\Conclave.Map.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\MySql.Data.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\Newtonsoft.Json.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\System.Collections.Immutable.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\Conclave.Data.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\Conclave.Map.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\Conclave.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\Newtonsoft.Json.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\Newtonsoft.Json.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\bin\Debug\System.Collections.Immutable.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\obj\Debug\Conclave.Map.Store.MySql.csprojResolveAssemblyReference.cache
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\obj\Debug\Conclave.Map.Store.MySql.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Store.MySql\obj\Debug\Conclave.Map.Store.MySql.pdb

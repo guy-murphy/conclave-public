@@ -8,15 +8,15 @@
 		or indeed thread safe
 	-->
 
-	<object name="off1::store::topic-map" type="Conclave.Map.Store.MySqlTopicStore, Conclave.MySql" singleton="false">
+	<object name="off2::store::topic-map" type="Conclave.Map.Store.MySqlTopicStore, Conclave.MySql" singleton="false">
 		<constructor-arg index="0" value="Server=USER-PC\CONCLAVE;Database=conclave;User Id=user;Password=password;" />
 	</object>
 
-	<object name="store::topic-map" type="Conclave.Map.Store.SqlServerTopicStore, Conclave.SqlServer" singleton="false">
+	<object name="off1::store::topic-map" type="Conclave.Map.Store.SqlServerTopicStore, Conclave.SqlServer" singleton="false">
 		<constructor-arg index="0" value="Server=localhost;Database=conclave;User Id=user;Password=password;" />
 	</object>
 
-	<object name="off2::store::topic-map" type="Conclave.Map.Store.MongoTopicStore, Conclave.Mongo" singleton="false">
+	<object name="store::topic-map" type="Conclave.Map.Store.MongoTopicStore, Conclave.Mongo" singleton="false">
 		<constructor-arg index="0" value="mongodb://localhost" />
 		<constructor-arg index="1" value="conclave" />
 	</object>

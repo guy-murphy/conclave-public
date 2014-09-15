@@ -14,3 +14,19 @@ E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\
 E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\obj\Debug\Conclave.Map.Tests.pdb
 e:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\System.Collections.Immutable.dll
 e:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map.Tests\bin\Debug\System.Collections.Immutable.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\Conclave.Map.Tests.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\Conclave.Map.Tests.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\Conclave.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\Conclave.Map.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\System.Collections.Immutable.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\Conclave.Data.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\Newtonsoft.Json.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\Conclave.Map.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\Conclave.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\System.Collections.Immutable.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\Conclave.Data.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\Newtonsoft.Json.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\bin\Debug\Newtonsoft.Json.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\obj\Debug\Conclave.Map.Tests.csprojResolveAssemblyReference.cache
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\obj\Debug\Conclave.Map.Tests.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map.Tests\obj\Debug\Conclave.Map.Tests.pdb

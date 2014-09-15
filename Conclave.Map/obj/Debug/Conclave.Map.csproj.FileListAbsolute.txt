@@ -12,3 +12,17 @@ E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map\obj\De
 E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map\obj\Debug\Conclave.Map.pdb
 e:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map\bin\Debug\System.Collections.Immutable.dll
 e:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Map\bin\Debug\System.Collections.Immutable.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\bin\Debug\Conclave.Map.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\bin\Debug\Conclave.Map.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\bin\Debug\Conclave.Data.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\bin\Debug\Conclave.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\bin\Debug\Newtonsoft.Json.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\bin\Debug\System.Collections.Immutable.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\bin\Debug\Conclave.Data.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\bin\Debug\Conclave.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\bin\Debug\Newtonsoft.Json.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\bin\Debug\Newtonsoft.Json.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\bin\Debug\System.Collections.Immutable.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\obj\Debug\Conclave.Map.csprojResolveAssemblyReference.cache
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\obj\Debug\Conclave.Map.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Map\obj\Debug\Conclave.Map.pdb

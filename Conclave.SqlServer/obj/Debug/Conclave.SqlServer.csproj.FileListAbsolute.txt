@@ -14,3 +14,19 @@ E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.SqlServer\
 E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.SqlServer\obj\Debug\Conclave.SqlServer.dll
 E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.SqlServer\obj\Debug\Conclave.SqlServer.pdb
 e:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.SqlServer\bin\Debug\System.Collections.Immutable.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\Conclave.SqlServer.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\Conclave.SqlServer.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\Conclave.Data.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\Conclave.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\Conclave.Map.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\System.Collections.Immutable.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\Newtonsoft.Json.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\Conclave.Data.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\Conclave.Map.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\Conclave.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\System.Collections.Immutable.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\Newtonsoft.Json.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\bin\Debug\Newtonsoft.Json.xml
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\obj\Debug\Conclave.SqlServer.csprojResolveAssemblyReference.cache
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\obj\Debug\Conclave.SqlServer.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.SqlServer\obj\Debug\Conclave.SqlServer.pdb

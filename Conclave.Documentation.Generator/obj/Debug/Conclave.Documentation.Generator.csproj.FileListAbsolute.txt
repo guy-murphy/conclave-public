@@ -6,3 +6,11 @@ E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentat
 E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation.Generator\obj\Debug\Conclave.Documentation.Generator.csprojResolveAssemblyReference.cache
 E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation.Generator\obj\Debug\Conclave.Documentation.Generator.exe
 E:\Users\User\Documents\Visual Studio 2012\Projects\Conclave\Conclave.Documentation.Generator\obj\Debug\Conclave.Documentation.Generator.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Documentation.Generator\bin\Debug\Conclave.Documentation.Generator.exe.config
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Documentation.Generator\bin\Debug\Conclave.Documentation.Generator.exe
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Documentation.Generator\bin\Debug\Conclave.Documentation.Generator.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Documentation.Generator\bin\Debug\Conclave.Documentation.dll
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Documentation.Generator\bin\Debug\Conclave.Documentation.pdb
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Documentation.Generator\obj\Debug\Conclave.Documentation.Generator.csprojResolveAssemblyReference.cache
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Documentation.Generator\obj\Debug\Conclave.Documentation.Generator.exe
+e:\Users\User\Documents\GitHub\conclave-public\Conclave.Documentation.Generator\obj\Debug\Conclave.Documentation.Generator.pdb
