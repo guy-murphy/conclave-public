@@ -107,21 +107,23 @@ your fancy. I would particularly appreciate any feedback on pain points
 experienced implementing different patterns.
 
 ## License
-I'll worry about a license over the Winter if there seems to be any legs to
-this as a project. Until then the only thing I will stress is redistribution
-of this code is expressly forbidden without prior permission. It's one thing
-if some individual devs want to play about with this code, but I'll not have
-it foisted on unsuspecting clients.
 
-Technically, at this point, all rights are reserved... make of that what you
-will... if you're going to use the codebase commercially, don't take the piss.
+Except where explicitly noted otherwise, all source code within this
+repository has the following license applied:-
 
-If anybody takes a fancy to the idea of porting Conclave sideways to a different
-platform, even if only in part... please feel free, you have my full
-support. If somebody doesn't get to it first I will implement Conclave in
-JS for Node eventually, as I'm really curious as to how it would fit, but
-it's in the middle of quite a long list of things I need to get around
-to doing. Clojure and Elixir are also on the list.
+	Copyright 2013, Guy J. Murphy
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	  http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
 
 
 
