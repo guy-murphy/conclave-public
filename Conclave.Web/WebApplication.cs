@@ -50,7 +50,7 @@ namespace Conclave.Web {
 			_isDisposed = true;
 		}
 
-        protected void Application_Start()
+        protected virtual void Application_Start()
         {
             BuildManager.GetReferencedAssemblies();
         }
