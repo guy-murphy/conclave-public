@@ -9,6 +9,7 @@ Thumbs.db
 *.aps
 *.pch
 *.vspscc
+*.vspx
 *_i.c
 *_p.c
 *.ncb
@@ -29,4 +30,4 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 /packages/
 !packages/repositories.config
-export/
+/export/

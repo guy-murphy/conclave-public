@@ -62,5 +62,10 @@ namespace Conclave.Process {
 			}
 			writer.WriteEndObject();
 		}
+
+        public override string ToString()
+        {
+            return this.ToJson();
+        }
 	}
 }
