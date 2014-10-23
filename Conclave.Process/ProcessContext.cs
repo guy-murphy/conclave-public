@@ -27,12 +27,50 @@ namespace Conclave.Process {
 		// not 100% sure it's the correct move
 		private readonly IDataDictionary<string> _params;
 
+        private static Func<IServiceContainer> _serviceContainerFactory;
+
+        public static Func<IServiceContainer> ServiceContainerFactory
+        {
+            set
+            {
+                if(_serviceContainerFactory != null)
+                {
+                    throw new ApplicationException("ServiceContainerFactory already set");
+                }
+                _serviceContainerFactory = value;
+            }
+        }
+
+        private static readonly object _servicesLock = new object();
+
+        private IServiceContainer _services;
+
 		/// <summary>
-		/// Exposes the processes service container.
+		/// Exposes the process service container.
 		/// </summary>
         public IServiceContainer Services
         {
-            get { return SpringServiceContainer.Instance; }
+            get
+            {
+                // use a double synchronisation lock as Services may be under contention
+                if (_services == null)
+                {
+                    lock(_servicesLock)
+                    {
+                        if(_services == null)
+                        {
+                            // check if we have a factory set up
+                            if (_serviceContainerFactory == null)
+                            {
+                                // use spring as a default
+                                _serviceContainerFactory = () => SpringServiceContainer.Instance;
+                            }
+                            _services = _serviceContainerFactory();
+                        }
+                    }
+                }
+                return _services;
+            }
         }
 
 		/// <summary>

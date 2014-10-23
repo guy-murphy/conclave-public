@@ -8,11 +8,45 @@ namespace Conclave.Web {
 	public class WebApplication: HttpApplication {
 
 		private bool _isDisposed = false;
-		private readonly IServiceContainer _services;
+		
 		private readonly string _baseDirectory;
 
-		public IServiceContainer Services {
+        private static Func<IServiceContainer> _serviceContainerFactory;
+        public static Func<IServiceContainer> ServiceContainerFactory
+        {
+            set
+            {
+                if (_serviceContainerFactory != null)
+                {
+                    throw new ApplicationException("ServiceContainerFactory already set");
+                }
+                _serviceContainerFactory = value;
+            }
+        }
+
+        private static readonly object _servicesLock = new object();
+
+        private static IServiceContainer _services;
+
+		public static IServiceContainer Services {
 			get {
+                // use a double synchronisation lock as Services may be under contention
+                if(_services == null)
+                {
+                    lock(_servicesLock)
+                    {
+                        if(_services == null)
+                        {
+                            // check if we have a factory set up
+                            if(_serviceContainerFactory == null)
+                            {
+                                // use spring as a default
+                                _serviceContainerFactory = () => SpringServiceContainer.Instance;
+                            }
+                            _services = _serviceContainerFactory();
+                        }
+                    }
+                }
 				return _services;
 			}
 		}
@@ -24,8 +58,6 @@ namespace Conclave.Web {
 		}
 
 		public WebApplication() {
-			//_services = new SpringServiceContainer();
-			_services = SpringServiceContainer.Instance;
 			_baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 		}
 
@@ -50,7 +82,7 @@ namespace Conclave.Web {
 			_isDisposed = true;
 		}
 
-        protected void Application_Start()
+        protected virtual void Application_Start()
         {
             BuildManager.GetReferencedAssemblies();
         }
