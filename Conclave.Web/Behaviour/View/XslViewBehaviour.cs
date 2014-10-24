@@ -43,11 +43,24 @@ namespace Conclave.Web.Behaviour.View {
 
 		private readonly string _contentType;
 
+        private readonly bool _enableCache;
+
 		public XslViewBehaviour(string message) : this(message, "text/xml") {}
 
 		public XslViewBehaviour(string message, string contentType) : base(message) {
 			_contentType = contentType;
+            _enableCache = true;
 		}
+
+        public XslViewBehaviour(string message, string contentType, bool enableCache) : this(message, contentType)
+        {
+            _enableCache = enableCache;
+        }
+
+        public XslViewBehaviour(string message, bool enableCache) : this(message)
+        {
+            _enableCache = enableCache;
+        }
 
 		// TODO: confirm thread safe
 		// The iterator generated for this should be
@@ -80,7 +93,7 @@ namespace Conclave.Web.Behaviour.View {
 
 					// check if we have the template cached
 					string cacheKey = String.Concat("xsl::", templateName);
-					XslCompiledTransform xsl = context.Flags.Contains("nocache") ? null : context.Cache.Get(cacheKey) as XslCompiledTransform;
+					XslCompiledTransform xsl = (_enableCache && context.Flags.Contains("nocache")) ? null : context.Cache.Get(cacheKey) as XslCompiledTransform;
 					if (xsl == null) {
 						// we dont have it cached
 						// does the file exist?
@@ -89,7 +102,10 @@ namespace Conclave.Web.Behaviour.View {
 							xsl = new XslCompiledTransform(true);
 							using (XmlReader reader = new XmlTextReader(templatePath)) {
 								xsl.Load(reader);
-								context.Cache.Add(cacheKey, xsl, new CacheDependency(templatePath), Cache.NoAbsoluteExpiration, new TimeSpan(1, 0, 0), CacheItemPriority.High, null);
+                                if (_enableCache)
+                                {
+                                    context.Cache.Add(cacheKey, xsl, new CacheDependency(templatePath), Cache.NoAbsoluteExpiration, new TimeSpan(1, 0, 0), CacheItemPriority.High, null);
+                                }
 							}
 						}
 					}
